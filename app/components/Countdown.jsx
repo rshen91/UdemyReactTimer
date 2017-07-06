@@ -6,10 +6,10 @@ var Countdown = React.createClass({
   getInitialState: function () {
     return {count: 0};
   },
-  handleSetCountdown: function (seconds) {
-    this.setState({
-      count: seconds
-    });
+  handleSetCountdown: function (strSeconds) {
+      this.setState({
+        count: strSeconds
+      });
   },
   render: function () {
     var {count} = this.state;
